@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+body {
+  min-height: 100vh;
+}
+
+/* @media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+} */
+
+@theme {
+  --color-accent: #e20054;
+  --color-main: #e9edf5;
+  --color-text: #0a2a51;
+  --color-text-gray: #445a74;
+  --color-inner-bg: #f5f7fa;
+  --color-input-divider: #d1dbe8;
+  --font-family-yekan: 'Yekan', sans-serif;
+}
