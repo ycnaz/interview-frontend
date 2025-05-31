@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@plugin "@tailwindcss/forms";
 
 body {
   min-height: 100vh;
@@ -17,5 +18,11 @@ body {
   --color-text-gray: #445a74;
   --color-inner-bg: #f5f7fa;
   --color-input-divider: #d1dbe8;
+  --color-selector-border: #e6f9f4;
+  --color-selected-radio-text: #344456;
+  --color-unselected-radio-text: #647e9a;
+  --color-filteration-box: #fce5ee;
+  --color-radio-checkbox-border: #b2c2d6;
+
   --font-family-yekan: 'Yekan', sans-serif;
 }
