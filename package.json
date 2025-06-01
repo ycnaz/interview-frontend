@@ -24,6 +24,7 @@
     "@tailwindcss/forms": "^0.5.10",
     "@vitejs/plugin-vue": "^5.2.3",
     "@vue/eslint-config-prettier": "^10.2.0",
+    "daisyui": "^5.0.43",
     "eslint": "^9.22.0",
     "eslint-plugin-vue": "~10.0.0",
     "globals": "^16.0.0",

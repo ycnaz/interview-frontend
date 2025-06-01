@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/forms";
+@plugin "daisyui";
 
 body {
   min-height: 100vh;
@@ -12,7 +13,7 @@ body {
 } */
 
 @theme {
-  --color-accent: #e20054;
+  --color-accent-og: #e20054;
   --color-main: #e9edf5;
   --color-text: #0a2a51;
   --color-text-gray: #445a74;
@@ -23,6 +24,16 @@ body {
   --color-unselected-radio-text: #647e9a;
   --color-filteration-box: #fce5ee;
   --color-radio-checkbox-border: #b2c2d6;
+  --color-footer: #f8f9fc;
+  --color-footer-h-text: #253343;
+  --color-footer-s-text: #30445b;
+  --color-unselected-category-num: #141928;
+  --color-breadcrumb: #6783a0;
+  --color-product-page-label: #57728e;
+
+  --text-twelve: 0.75rem;
+  --text-thirteen: 0.8125rem;
+  --text-fourteen: 0.875rem;
 
   --font-family-yekan: 'Yekan', sans-serif;
 }
