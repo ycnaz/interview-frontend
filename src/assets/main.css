@@ -31,6 +31,8 @@ body {
   --color-breadcrumb: #6783a0;
   --color-product-page-label: #57728e;
 
+  --breakpoint-xs: 22.5rem;
+
   --text-twelve: 0.75rem;
   --text-thirteen: 0.8125rem;
   --text-fourteen: 0.875rem;
