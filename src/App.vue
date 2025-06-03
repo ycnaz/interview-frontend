@@ -97,7 +97,7 @@ onMounted(() => productStore.fetchProducts())
       <div
         class="col-span-2 grid grid-cols-3 mt-10 max-xs:flex max-xs:flex-wrap max-xs:mt-40 max-xs:mb-10 max-xs:justify-between">
         <div class="flex flex-col gap-y-6">
-          <h6 class="text-footer-h-text text-xl">دسترسی سریع</h6>
+          <h3 class="text-footer-h-text text-xl">دسترسی سریع</h3>
           <div class="flex flex-col gap-y-3 text-footer-s-text text-thirteen">
             <span class="text-accent-og">درباره ما</span>
             <span>بلاگ</span>
@@ -106,7 +106,7 @@ onMounted(() => productStore.fetchProducts())
           </div>
         </div>
         <div class="flex flex-col gap-y-6">
-          <h6 class="text-footer-h-text text-xl">راهنمای سایت</h6>
+          <h3 class="text-footer-h-text text-xl">راهنمای سایت</h3>
           <div class="flex flex-col gap-y-3 text-footer-s-text text-thirteen">
             <span>قوانین و مقررات</span>
             <span>دریافت مشاوره</span>
@@ -114,7 +114,7 @@ onMounted(() => productStore.fetchProducts())
           </div>
         </div>
         <div class="flex flex-col gap-y-6">
-          <h6 class="text-footer-h-text text-xl">شبکه‌های اجتماعی</h6>
+          <h3 class="text-footer-h-text text-xl">شبکه‌های اجتماعی</h3>
           <div class="flex flex-col gap-y-4 text-footer-s-text text-thirteen">
             <div class="flex gap-x-3">
               <img loading="lazy" alt="Telegram SVG" src="./assets/svg/telegram.svg">

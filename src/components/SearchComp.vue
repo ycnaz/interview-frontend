@@ -28,7 +28,8 @@ const addQuery = () => {
             <img loading="lazy" alt="Filter Input Magnifying Glass SVG" src="../assets/svg/magnifying-glass.svg"
                 class="size-4">
             <div class="w-px h-full bg-input-divider"></div>
-            <input ref="searchInput" v-model="query"
+            <label for="query" class="sr-only">search</label>
+            <input ref="searchInput" v-model="query" id="query" type="search" placeholder="جستجو..."
                 class="focus:outline-0 bg-inner-bg h-full w-auto border-0 focus:ring-0">
             <img @click.stop="query = ''" loading="lazy" alt="Filter Input Close Button SVG"
                 src="../assets/svg/cross-gray.svg" class="size-2">
