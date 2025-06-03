@@ -13,6 +13,7 @@ const toggleHamburger = () => {
 
 const closeBurger = () => {
   burgerOpen.value = false
+  console.log(burgerOpen.value)
 }
 
 onMounted(() => productStore.fetchProducts())
@@ -26,7 +27,7 @@ onMounted(() => productStore.fetchProducts())
       <div class="max-xs:hidden"></div>
 
       <div
-        :class="['flex justify-self-center self-center gap-x-10 max-xs:absolute max-xs:top-5 max-xs:z-10 max-xs:bg-accent-og max-xs:h-dvh max-xs:w-full max-xs:pt-20 max-xs:text-2xl max-xs:gap-y-5 max-xs:flex-col max-xs:items-center transition-all', burgerOpen ? 'max-xs:right-0' : 'max-xs:-right-96']">
+        :class="['flex justify-self-center self-center gap-x-10 max-xs:fixed max-xs:top-0 max-xs:z-10 max-xs:bg-accent-og max-xs:min-h-dvh max-xs:w-full max-xs:pt-20 max-xs:text-2xl max-xs:gap-y-5 max-xs:flex-col max-xs:items-center transition-all', burgerOpen ? 'max-xs:right-0' : 'max-xs:-right-96']">
 
         <div @click="closeBurger" class="flex gap-x-2 min-w-max">
           <img loading="lazy" alt="Nav link SVGs" src="./assets/svg/navbar-category-2.svg">
@@ -63,7 +64,7 @@ onMounted(() => productStore.fetchProducts())
       </div>
 
       <div @click="toggleHamburger"
-        :class="['flex justify-center items-center size-10 rounded-lg border border-accent-og cursor-pointer xs:hidden', { 'fixed top-4 -right-4 z-20 border-white': burgerOpen }]">
+        :class="['flex justify-center items-center size-10 rounded-lg border border-accent-og cursor-pointer xs:hidden', { 'fixed top-4 right-4 z-20 border-white': burgerOpen }]">
         <div class="flex flex-col items-center justify-center gap-y-[3px] size-4">
           <div
             :class="['w-full h-px rounded-lg bg-accent-og transition-all', burgerOpen ? 'rotate-45 translate-y-0.5 bg-white' : '']">

@@ -4,7 +4,6 @@ import { getAllProducts } from '@/services/api'
 
 export const useProductStore = defineStore('productStore', () => {
   const products = ref([])
-  const product = ref(null)
   const categories = ref([])
 
   const searchQuery = ref('')
@@ -126,7 +125,6 @@ export const useProductStore = defineStore('productStore', () => {
 
   return {
     products,
-    product,
     categories,
     loading,
     error,

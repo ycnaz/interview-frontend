@@ -8,10 +8,9 @@ const api = axios.create({
   },
 })
 
-export const getAllProducts = async (limit = null, sort = 'asc') => {
+export const getAllProducts = async (sort = 'asc') => {
   try {
     const params = {}
-    if (limit) params.limit = limit
     if (sort) params.sort = sort
 
     const response = await api.get('/products', { params })
